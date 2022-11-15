@@ -1,5 +1,4 @@
 
-import React from 'react'
 import products from "../products"
 import ProductItem from './ProductItem'
 const Products = () => {
