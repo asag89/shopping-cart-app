@@ -2,6 +2,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { addToCart } from '../features/cart/cartSlice'
+
 const Product = () => {
     const dispatch = useDispatch()
     const { productId } = useParams()
@@ -9,7 +10,7 @@ const Product = () => {
     const product = products.find((item) => {
         return item?.id === productId
     })
-    const { id, name, price, image, seller, amount } = product
+    const { id, name, price, image, seller } = product
     return (
         <div className='product-details'>
             <div className='product-details-img-wrapper'>
